@@ -994,6 +994,7 @@ address {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 34px;
+  transition: border var(--transition-dur-and-func);
 }
 
 .contact-form-input:focus {
@@ -1087,6 +1088,7 @@ address {
   left: 16px;
   transform: translate(0, -50%);
   fill: #2e2f42;
+  transition: fill var(--transition-dur-and-func);
 }
 
 .terms-and-conditions:before {
