@@ -429,7 +429,7 @@ address {
   position: relative;
 }
 .current::after {
-  content:'';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -437,12 +437,11 @@ address {
   height: 4px;
   border-radius: 2px;
   background-color: var(--hover-color);
-
 }
 
 /* HERO */
 .hero {
-  background: #2e2f42;
+  background-color: #2e2f42;
   padding-top: 192px;
   padding-bottom: 192px;
   background-image: var(--gradient), url(../images/hero-bg.jpeg);
@@ -785,7 +784,14 @@ address {
   padding-bottom: 8px;
   margin-right: 24px;
   color: rgba(255, 255, 255, 0.6);
+  transition: border var(--transition-dur-and-func);
 }
+
+.suscribe-form-input:is(:hover, :focus) {
+  border: 1px solid #4d5ae5;
+  outline: none;
+}
+
 .suscribe-form-btn {
   background-color: #4d5ae5;
   border-radius: 4px;
